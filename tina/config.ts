@@ -167,6 +167,11 @@ export default defineConfig({
             type: "rich-text",
             isBody: true,
           },
+          {
+            name:"nombre",
+            label:"nombre",
+            type:"string"
+          },
         ],
       },
       {
