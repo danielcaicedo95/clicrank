@@ -5,7 +5,7 @@ import { IconSelector } from "./icon-select"
 
 export default defineConfig({
   branch: process.env.VERCEL_GIT_COMMIT_REF || "",
-  clientId: process.env.TINA_CLIENT_ID || "",
+  clientId: process.env.TINA_CLIENT_ID || "edf490a6-bb37-45ca-94a9-da10867a165d",
   token: process.env.TINA_TOKEN || "",
   build: {
     publicFolder: "public",
