@@ -19,11 +19,13 @@ const DialogPortal = ({
   children,
   ...props
 }: ExtendedDialogPortalProps) => (
-  <DialogPrimitive.Portal className={cn(className)} {...props}>
-    <div className="fixed inset-0 z-50 flex items-start justify-center sm:items-center">
-      {children}
-    </div>
-  </DialogPrimitive.Portal>
+  <div className={cn(className)}>
+    <DialogPrimitive.Portal {...props}>
+      <div className="fixed inset-0 z-50 flex items-start justify-center sm:items-center">
+        {children}
+      </div>
+    </DialogPrimitive.Portal>
+  </div>
 )
 DialogPortal.displayName = DialogPrimitive.Portal.displayName
 
