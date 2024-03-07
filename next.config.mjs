@@ -1,9 +1,5 @@
 /** @type {import('next').NextConfig} */
 
-module.exports = {
-  // Use the prefix in the assetPrefix to serve the correct static files
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/{https://github.com/danielcaicedo95/clicrank.git}' : '',
-}
 
 const nextConfig = {
   reactStrictMode: true,
