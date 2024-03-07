@@ -6,6 +6,10 @@ import { X } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 
+interface ExtendedDialogPortalProps extends DialogPrimitive.DialogPortalProps {
+  className?: string;
+}
+
 const Dialog = DialogPrimitive.Root
 
 const DialogTrigger = DialogPrimitive.Trigger
