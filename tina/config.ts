@@ -40,6 +40,7 @@ export default defineConfig({
             type: "object",
             list: true,
             templates: [
+              
               {
                 name: "welcomeHero",
                 label: "Welcome Hero",
@@ -65,6 +66,94 @@ export default defineConfig({
                   },
                 ],
               },
+              {
+                name: 'PageBlocksLogoCarousel', 
+                label: 'Logo Carousel',
+                fields: [
+                  {
+                    label: 'Logos',
+                    name: 'logos',
+                    type: 'object',
+                    list: true,
+                    fields: [
+                      { type: 'string', label: 'Image Source', name: 'src' },
+                      { type: 'string', label: 'Alt Text', name: 'alt' },
+                      { type: 'string', label: 'Website URL', name: 'url' },
+                    ],
+                  },
+                ],
+              },
+              
+              {
+                label: 'Formulario de Contacto',
+                name: 'contactForm',
+                fields: [
+                  {
+                    label: 'ID del Formulario',
+                    name: 'formId',
+                    type: 'string',
+                  },
+                  {
+                    label: 'Campos del Formulario',
+                    name: 'formFields',
+                    type: 'object',
+                    fields: [
+                      {
+                        label: 'Etiqueta del Campo',
+                        name: 'label',
+                        type: 'string',
+                      },
+                      {
+                        label: 'Nombre del Campo',
+                        name: 'name',
+                        type: 'string',
+                      },
+                      {
+                        label: 'Tipo del Campo',
+                        name: 'type',
+                        type: 'string',
+                        options: ['string', 'email', 'textarea'],
+                      },
+                    ],
+                  },
+                ],
+              },
+              
+              {
+                name: "card",
+                label: "Card right",
+                fields: [
+                  {
+                    name: "image",
+                    label: "Image",
+                    type: "image",
+                  },
+                  {
+                    name: "text",
+                    label: "Text",
+                    type: "rich-text",
+                  },
+                ],
+              },
+
+              {
+                name: "PageBlocksCard_left",
+                label: "Card left",
+                fields: [
+                  {
+                    name: "text",
+                    label: "Text",
+                    type: "rich-text",
+                  },
+                  {
+                    name: "image",
+                    label: "Image",
+                    type: "image",
+                  },
+                ],
+              },
+
+              
               {
                 name: "featureList",
                 label: "Feature List",

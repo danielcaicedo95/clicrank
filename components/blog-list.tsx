@@ -19,7 +19,7 @@ const authors = [
     imageUrl: "/authors/author-1.jpeg",
   },
   {
-    name: "Adam Bennett",
+    name: "Daniel Caicedo",
     imageUrl: "/authors/author-2.jpeg",
   },
   {

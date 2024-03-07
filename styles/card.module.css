@@ -1,0 +1,78 @@
+.styledCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-top: 2px solid;
+    border-image: linear-gradient(to right, black, violet) 1;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-direction: row;
+    overflow: auto;
+    margin-bottom: 15px;
+  }
+  
+  .styledCard .imageContainer {
+    width: 50%; /* Define un ancho fijo para el contenedor de la imagen */
+    height: 50%; /* Define una altura fija para el contenedor de la imagen */
+    overflow: hidden; /* Asegura que la imagen no se desborde del contenedor */
+    margin-right: 35px;
+  }
+  
+  .styledCard .imageContainer img {
+    
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 100%; /* Asegura que la imagen ocupe toda la altura del contenedor */
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin deformarse */
+  }
+  
+  .styledCard .textContainer {
+    width: 500px; /* Define un ancho fijo para el contenedor del texto */
+    max-height: 500px; /* Define una altura máxima para el contenedor del texto */
+    overflow-y: auto; /* Agrega un desplazamiento si el texto se desborda del contenedor */
+    text-align: center;
+    margin-right: 35px;
+    word-wrap: break-word;
+  }
+  
+  .styledCard .textContainer[data-tina-field] h2,
+  .styledCard .textContainer[data-tina-field] h3 {
+    color: rebeccapurple;
+  }
+  
+  .styledCard .textContainer[data-tina-field] h1,
+  .styledCard .textContainer[data-tina-field] h2,
+  .styledCard .textContainer[data-tina-field] h3,
+  .styledCard .textContainer[data-tina-field] h4,
+  .styledCard .textContainer[data-tina-field] h5,
+  .styledCard .textContainer[data-tina-field] h6 {
+    color: rebeccapurple !important; /* Asegura que este color se aplique */
+  }
+  
+  .styledCard .textContainer[data-tina-field] h2 {
+    font-size: 2em !important; /* Asegura que este tamaño de fuente se aplique */
+    font-weight: bold !important; /* Asegura que este peso de fuente se aplique */
+  }
+  
+  .styledCard .textContainer[data-tina-field] h3 {
+    font-size: 1.5em !important; /* Asegura que este tamaño de fuente se aplique */
+    font-weight: bold !important; /* Asegura que este peso de fuente se aplique */
+  }
+  
+  @media (max-width: 800px) {
+    .styledCard {
+      flex-direction: column-reverse;
+    }
+  
+    .styledCard .imageContainer,
+    .styledCard .textContainer {
+      width: 100%; /* En pantallas pequeñas, los contenedores de la imagen y el texto ocupan todo el ancho */
+      margin-right: 0;
+    }
+  
+    .styledCard .imageContainer {
+      height: 300px; /* Define una altura fija para el contenedor de la imagen en pantallas pequeñas */
+    }
+  }
+  

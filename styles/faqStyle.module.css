@@ -1,0 +1,92 @@
+/* faqStyle.module.css */
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 5%;
+}
+
+.faq-item {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px; /* Ajusta según sea necesario */
+}
+
+.faq-item:hover {
+  color: #0070f3;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  font-size: 1em;
+  text-align: center;
+}
+
+.arrow {
+  font-size: 1.5em;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.arrow.open::before {
+  content: '\2022'; /* Círculo Unicode */
+  font-size: 1.2em;
+  margin-right: 6px;
+}
+
+.faqs {
+  text-align: center;
+  font-size: 2.5em;
+  color: #000;
+  background: -webkit-linear-gradient(#000, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 800px;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 10px; /* Añade espacio de relleno según sea necesario */
+}
+
+.faq-item.open .faq-answer {
+  max-height: 1000px; /* Un valor suficientemente grande para que sea mayor que la altura máxima posible de la respuesta */
+}
+
+
+/* Tamaño de fuente para ventanas de navegador de hasta 600px de ancho */
+@media (max-width: 600px) {
+  .faq-question,
+  .faq-answer,
+  .arrow {
+    font-size: 1em;
+  }
+}
+
+/* Tamaño de fuente para ventanas de navegador de más de 600px de ancho */
+@media (min-width: 601px) {
+  .faq-question,
+  .faq-answer,
+  .arrow {
+    font-size: 1.5em;
+  }
+}

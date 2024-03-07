@@ -1,65 +1,147 @@
 ---
 title: Hello
 blocks:
+  - formId: '12655'
+    formFields:
+      label: nombre
+      name: nombre
+      type: string
+    _template: contactForm
   - message: >
-      # **La Andrea no cocina rico y el miller es gay y el culo lo traiciona y
-      ayayita es un mariguanero de mierda**
+      # Especialistas en Posicionamiento Orgánico y Desarrollo web
 
 
-      # **!**
+      # ¡ClicRank !
 
 
-      Y el culo lo traiciona
+      #### Potencia Tu Presencia Digital con Nuestros Servicios de SEO y
+      Desarrollo web
     links:
       - link: /
-        label: Get Started
+        label: Consultoría Gratis
         style: button
       - link: /learn
         label: Learn More
-        style: simple
+        style: ''
     _template: welcomeHero
-  - byline: Services
+  - logos:
+      - src: 'http://localhost:3000/logobrand.webp'
+      - src: 'http://localhost:3000/aldo (1).png'
+      - src: 'http://localhost:3000/cinar.png'
+      - src: 'http://localhost:3000/tissini.png'
+        alt: 'http://localhost:3000/'
+      - src: 'http://localhost:3000/zamba.png'
+      - src: 'http://localhost:3000/prochampions.png'
+      - src: 'http://localhost:3000/lexus-png.png'
+      - src: 'http://localhost:3000/hino-peru.png'
+      - src: 'http://localhost:3000/toyota-peru.png'
+        alt: hola
+        url: 'https://www.truity.com/test-results/bigfive/18708/54117120'
+      - src: 'http://localhost:3000/fruta-fresca-co.png'
+      - src: 'http://localhost:3000/kinto-centro.png'
+    _template: PageBlocksLogoCarousel
+  - byline: Servicios
     message: >
-      ## Experience video calls like never before with LlamaLink.
+      ## Transforma tu Presencia Digital con Desarrollo Web Innovador y
+      Estrategias SEO Avanzadas
 
 
-      LlamaLink was born out of a desire to bring joy, laughter, and a touch of
-      whimsy to the world of video communication. We believe that every
-      conversation should be an extraordinary experience, and what better way to
-      add a dash of excitement than by introducing llamas into the mix?
+      En ClicRank, fusionamos creatividad y tecnología para impulsar tu
+      presencia digital. Como expertos en desarrollo web, nos estacamos en
+      interfaces de usuario envolventes y experiencias de usuario excepcionales.
+      Nuestra especialidad en SEO va más allá de las siglas, empleando
+      inteligencia artificial y tecnologías avanzadas para asegurar resultados
+      tangibles. Somos arquitectos de tu éxito en línea, actualizados con los
+      últimos algoritmos de Google y motores de búsqueda. En ClicRank, no solo
+      creamos sitios web; construimos experiencias digitales significativas que
+      transforman visiones en realidad. ¡Descubre el potencial ilimitado de tu
+      presencia digital con nosotros!
     features:
       - icon: ChatBubbles
-        label: LlamaLink App
+        label: Posicionamiento Web con Visión Futurista
         description: >-
-          Our user-friendly app provides a seamless experience across devices,
-          allowing you to connect with others effortlessly. Available on
-          desktop, mobile, and tablet, LlamaLink keeps you connected anytime,
-          anywhere.
+          Elevamos tu visibilidad en línea con SEO avanzado. Utilizando
+          inteligencia artificial y herramientas especializadas, impulsamos tu
+          sitio web hacia la cima de los motores de búsqueda, garantizando
+          resultados tangibles y sostenibles.
       - icon: StarWindow
-        label: LlamaLink Messages
+        label: Experiencia de Usuario sin Límites
         description: >-
-          Host virtual meetings, conferences, and webinars with ease using
-          LlamaLink Meetings. Enjoy the collaborative features, such as screen
-          sharing, file sharing, and real-time chat, all while surrounded by
-          llama-themed goodness.
+          Introducimos el futuro con CMS Headless. Despídete de limitaciones con
+          un enfoque revolucionario que mejora la experiencia de usuario.
+          Exploramos la diferencia entre los CMS tradicionales y este enfoque
+          vanguardista, brindando flexibilidad y agilidad.
       - icon: SocialEmoji
-        label: Llama Social
+        label: Estrategias Basadas en KPYS
         description: >-
-          Connect with friends, family, and colleagues through LlamaLink Social.
-          Share updates, photos, and videos, and engage in llama-themed
-          conversations that will make your social network experience unique and
-          entertaining.
+          Nuestra metodología se centra en KPIs (Key Performance Indicators).
+          Definimos metas claras y medibles, trabajando con un enfoque centrado
+          en resultados. Colaboramos contigo para alcanzar tus objetivos y
+          maximizar el impacto de tu presencia digital.
       - icon: BallStar
-        label: Mission Statement
+        label: 'Growhth Hacking: Estrategia Innovadoras'
         description: >-
-          To infuse joy, laughter, and connection into every video call through
-          the charm of llamas, transforming ordinary conversations into
-          extraordinary moments.
+          Exploramos el Growth Hacking para potenciar tu presencia digital. Con
+          enfoques creativos y tácticas ingeniosas, llevamos tu proyecto a
+          nuevas alturas. Descubre cómo nuestras estrategias disruptivas
+          impulsan el crecimiento sostenible de tu negocio.
     _template: featureList
-  - label: Announcement
+  - image: /pexels-andrea-piacquadio-3758105.jpg
+    text: |
+      ### holaaaaa
+
+      loefkjfjfkjfjfjfjfjjfjjfjfjfjjfjdkfdkds jdjdjd jdjdjjdjd cjcncjncjncj
+
+      kdkdkkff
+
+      Este es el texto
+    _template: card
+  - text: >
+      ## Este es un titulo
+
+
+      hola mundo munfks
+
+
+      dnjfhkjsdhkjfd
+
+
+      skjdfshkjfdshkjdfshkjdfs
+
+
+      hkjdfshkjdfhdf
+
+
+      skldajkljklfdjkldfjfdkljafdklsjsdfnadsjjdasjdsjjdsjdjdjjdjjdjdjdjdjdjjdjdjjdjjdjdjjas
+    image: /pexels-andrea-piacquadio-3758105.jpg
+    _template: PageBlocksCard_left
+  - image: /pexels-andrea-piacquadio-3758105.jpg
+    text: |
+      ## Holaaaa nuevo titulo
+
+      jdj\<sddfjshdfsjdfhsjkfdhfkjd
+    _template: card
+  - label: Conóceme
     featuredPost: content/posts/call-themes.md
     _template: featuredReading
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
