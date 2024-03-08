@@ -1,61 +1,69 @@
+/* Estilos base */
 .carouselContainer {
-    width: 100%;
-    padding: 5px;
-    background-color: #4910b4;
-    display: flex;
-    justify-content: center;
-    align-items: center !important;
+  width: 100%;
+  padding: 5px;
+  background-color: #4910b4;
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+}
+
+.slick-slider {
+  width: 100%;
+}
+
+.slick-track {
+  position: relative;
+  top: 20px; /* Ajusta este valor a lo que necesites */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine !important;
+}
+
+.logoContainer {
+  width: 50%;
+  padding: 5px;
+  text-align: center;
+}
+
+.logoContainer img {
+  max-width: 70%;
+  max-height: 100%;
+  transition: transform 0.3s ease;
+  object-fit: contain;
+}
+
+.logoContainer img:hover {
+  transform: scale(1.1);
+}
+
+.slick-next {
+  right: -25px; /* Ajusta esto para mover la flecha a la derecha */
+}
+
+.slick-prev {
+  left: -25px; /* Ajusta esto para mover la flecha a la izquierda */
+}
+
+.slick-next, .slick-prev {
+  height: 50px; /* Ajusta esto para cambiar la altura de las flechas */
+  width: 50px; /* Ajusta esto para cambiar la anchura de las flechas */
+  background: transparent; /* Cambia esto al color de fondo que quieras para las flechas */
+  z-index: 1; /* Asegura que las flechas estén por encima de los otros elementos */
+}
+
+.slick-next:before, .slick-prev:before {
+  font-size: 50px; /* Ajusta esto para cambiar el tamaño de las flechas */
+}
+
+.arrow:before {
+  color: pink !important;
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media screen and (max-width: 800px) {
+  .carouselContainer {
+    background-color: white;
   }
-  
-  .slick-slider {
-    width: 100%;
-  }
-  
-  .slick-track {
-    position: relative;
-    top: 20px; /* Ajusta este valor a lo que necesites */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: aquamarine !important;
-  }
-  
-  .logoContainer {
-    width: 50%;
-    padding: 5px;
-    text-align: center;
-  }
-  
-  .logoContainer img {
-    max-width: 70%;
-    max-height: 100%;
-    transition: transform 0.3s ease;
-    object-fit: contain;
-  }
-  
-  .logoContainer img:hover {
-    transform: scale(1.1);
-  }
-  
-  
-  .slick-next {
-    right: -25px; /* Ajusta esto para mover la flecha a la derecha */
-  }
-  
-  .slick-prev {
-    left: -25px; /* Ajusta esto para mover la flecha a la izquierda */
-  }
-  
-  .slick-next, .slick-prev {
-    height: 50px; /* Ajusta esto para cambiar la altura de las flechas */
-    width: 50px; /* Ajusta esto para cambiar la anchura de las flechas */
-    background: transparent; /* Cambia esto al color de fondo que quieras para las flechas */
-    z-index: 1; /* Asegura que las flechas estén por encima de los otros elementos */
-  }
-  
-  .slick-next:before, .slick-prev:before {
-    font-size: 50px; /* Ajusta esto para cambiar el tamaño de las flechas */
-  }
-  .arrow:before {
-    color: pink !important;
-  }
+}
