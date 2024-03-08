@@ -63,7 +63,7 @@
 
 /* Estilos para pantallas pequeñas (móviles) */
 @media screen and (max-width: 800px) {
-  .carouselContainer {
+  body .carouselContainer {
     background-color: white;
   }
 }
