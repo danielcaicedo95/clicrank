@@ -25,20 +25,21 @@ blocks:
         style: ''
     _template: welcomeHero
   - logos:
-      - src: 'http://localhost:3000/logobrand.webp'
-      - src: 'http://localhost:3000/aldo (1).png'
-      - src: 'http://localhost:3000/cinar.png'
-      - src: 'http://localhost:3000/tissini.png'
-        alt: 'http://localhost:3000/'
-      - src: 'http://localhost:3000/zamba.png'
-      - src: 'http://localhost:3000/prochampions.png'
-      - src: 'http://localhost:3000/lexus-png.png'
-      - src: 'http://localhost:3000/hino-peru.png'
-      - src: 'http://localhost:3000/toyota-peru.png'
-        alt: hola
+      - src: 'https://clicrank.vercel.app/logobrand.webp'
+      - src: 'https://clicrank.vercel.app/aldo (1).png'
+      - src: 'https://clicrank.vercel.app/cinar.png'
+      - src: 'https://clicrank.vercel.app/tissini.png'
+        alt: 'https://clicrank.vercel.app/'
+      - src: 'https://clicrank.vercel.app/zamba.png'
+      - src: 'https://clicrank.vercel.app/prochampions.png'
+      - src: 'https://clicrank.vercel.app/lexus-png.png'
+      - src: 'https://clicrank.vercel.app/hino-peru.png'
+      - src: 'https://clicrank.vercel.app/toyota-peru.png'
+        alt: 'hola'
         url: 'https://www.truity.com/test-results/bigfive/18708/54117120'
-      - src: 'http://localhost:3000/fruta-fresca-co.png'
-      - src: 'http://localhost:3000/kinto-centro.png'
+      - src: 'https://clicrank.vercel.app/fruta-fresca-co.png'
+      - src: 'https://clicrank.vercel.app/kinto-centro.png'
+
     _template: PageBlocksLogoCarousel
   - byline: Servicios
     message: >
