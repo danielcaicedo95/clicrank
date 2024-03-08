@@ -10,7 +10,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "assets.tina.io",
+        hostname: "clicrank-omega.vercel.app",
       },
     ],
   },
