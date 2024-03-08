@@ -61,7 +61,7 @@
 
 @media (max-width: 800px) {
   .styledCard {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .styledCard .imageContainer,
@@ -71,15 +71,10 @@
   }
 
   .styledCard .imageContainer {
-    height: 300px;
+    height: auto; /* Cambia la altura a auto para permitir que el contenedor de la imagen se redimensione correctamente */
   }
 
-  .styledCard .textContainer[data-tina-field] h1,
-  .styledCard .textContainer[data-tina-field] h2,
-  .styledCard .textContainer[data-tina-field] h3,
-  .styledCard .textContainer[data-tina-field] h4,
-  .styledCard .textContainer[data-tina-field] h5,
-  .styledCard .textContainer[data-tina-field] h6 {
+  .styledCard .textContainer * {
     color: black !important;
   }
 }

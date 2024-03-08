@@ -60,7 +60,7 @@ type FeatureBlock = Extract<Block, { __typename: "PageBlocksFeaturedReading" }>
 
 export function FeaturedReading(props: FeatureBlock) {
   return (
-    <div className="relative">
+    <div className="relative" style={{ marginTop: '50px' }} >
       <div className="absolute inset-0 overflow-hidden">
         <Wavy className="absolute inset-0 opacity-10" />
       </div>
@@ -128,7 +128,7 @@ export function FeaturedReadingAlt({
   hasLink?: boolean
 }) {
   return (
-    <div className="grid-rows-12 mx-auto grid grid-cols-1 overflow-hidden rounded-lg bg-card shadow-md lg:grid-cols-12 lg:grid-rows-1">
+    <div className="grid-rows-12 mx-auto grid grid-cols-1 overflow-hidden rounded-lg bg-card shadow-md lg:grid-cols-12 lg:grid-rows-1 mt-25">
       <div className="relative col-span-6  px-4 py-8 sm:px-12 sm:py-16 lg:col-span-5 lg:min-h-[400px]">
         <h2
           id="featured-post"
