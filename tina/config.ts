@@ -40,6 +40,8 @@ export default defineConfig({
             type: "object",
             list: true,
             templates: [
+
+              
               
               {
                 name: "welcomeHero",
@@ -136,6 +138,8 @@ export default defineConfig({
                 ],
               },
 
+              
+
               {
                 name: "PageBlocksCard_left",
                 label: "Card left",
@@ -149,6 +153,36 @@ export default defineConfig({
                     name: "image",
                     label: "Image",
                     type: "image",
+                  },
+                ],
+              },
+
+              {
+                name: "techComponent",
+                label: "Tech Component",
+                fields: [
+                  {
+                    name: "mainText",
+                    label: "Main Text",
+                    type: "rich-text",
+                  },
+                  {
+                    name: "images",
+                    label: "Images",
+                    type: "object",
+                    list: true,
+                    fields: [
+                      {
+                        name: "image",
+                        label: "Image",
+                        type: "image",
+                      },
+                      {
+                        name: "text",
+                        label: "Text",
+                        type: "string",
+                      },
+                    ],
                   },
                 ],
               },

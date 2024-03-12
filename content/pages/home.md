@@ -1,6 +1,22 @@
 ---
 title: Hello
 blocks:
+  - mainText: ''
+    images:
+      - image: /cinar.png
+        text: >-
+          buenas tardesbuenas tardesbuenas tardesbuenas tardesbuenas
+          tardesbuenas tardesbuenas tardesbuenas tardesbuenas tardesbuenas
+          tardesbuenas tardesbuenas tardesbuenas tardesbuenas tardes
+      - image: /cccoil.svg
+        text: ahghdjsgfkjhsdjhfdskkfg
+      - image: /logobrand.webp
+        text: hola bobo que ve
+      - image: /nnneon.svg
+        text: hola mundo
+      - image: /lexus-png.png
+        text: esta tecnologia es la mejor
+    _template: techComponent
   - formId: '12655'
     formFields:
       label: nombre
@@ -35,11 +51,10 @@ blocks:
       - src: 'https://clicrank.vercel.app/lexus-png.png'
       - src: 'https://clicrank.vercel.app/hino-peru.png'
       - src: 'https://clicrank.vercel.app/toyota-peru.png'
-        alt: 'hola'
+        alt: hola
         url: 'https://www.truity.com/test-results/bigfive/18708/54117120'
       - src: 'https://clicrank.vercel.app/fruta-fresca-co.png'
       - src: 'https://clicrank.vercel.app/kinto-centro.png'
-
     _template: PageBlocksLogoCarousel
   - byline: Servicios
     message: >
@@ -126,6 +141,8 @@ blocks:
     featuredPost: content/posts/call-themes.md
     _template: featuredReading
 ---
+
+
 
 
 

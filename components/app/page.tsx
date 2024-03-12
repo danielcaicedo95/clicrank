@@ -15,7 +15,20 @@ import FormClient from "@/components/form-client"
 import FAQList from "@/components/faqList"
 import Card from "@/components/card";
 import CardLeft from "@/components/cardLeft";
+import TechComponent from "@/components/techComponent"
 
+
+interface ImageProps {
+  __typename: string;
+  image?: string | null;
+  text?: string | null;
+}
+
+interface TechComponentBlock {
+  __typename: "PageBlocksTechComponent";
+  mainText?: string | null;
+  images?: ImageProps[];
+}
 
 interface CardBlock {
   __typename: "PageBlocksCard";
@@ -86,7 +99,13 @@ export default function PageComponent(props: PageComponentProps) {
             const cardLeftBlock = block as CardLeftBlock;
             return <CardLeft key={i} text={cardLeftBlock.text} image={cardLeftBlock.image}  fieldName={`data.page.blocks[${i}].text`} />;
           }
-         
+          case "PageBlocksTechComponent": {
+            const techComponentBlock = block as TechComponentBlock;
+            const validImages = techComponentBlock.images?.filter(image => image.image !== null && image.image !== undefined).map(image => ({ image: image.image || '', alt: image || '', text: image.text || '' })) || [];
+            return <TechComponent key={i} mainText={techComponentBlock.mainText || ''} images={validImages} />;
+          }
+
+          
         }
       })}
       <div>
