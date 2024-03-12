@@ -182,6 +182,11 @@ export default defineConfig({
                         label: "Text",
                         type: "string",
                       },
+                      {
+                        name: "alt",
+                        label: "Alt Text",
+                        type: "string", // El tipo de campo para el texto alternativo debe ser 'string'
+                    },
                     ],
                   },
                 ],

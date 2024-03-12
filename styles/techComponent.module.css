@@ -67,3 +67,14 @@
         width: calc(20% - 10px); /* Los elementos ocupan aproximadamente una quinta parte del ancho de la pantalla */
     }
 }
+
+@media (max-width: 600px) {
+    .arrow-up {
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid rgb(171, 29, 184, 0.2);
+        margin: 0 auto;
+    }
+}

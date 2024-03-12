@@ -1,22 +1,6 @@
 ---
 title: Hello
 blocks:
-  - mainText: ''
-    images:
-      - image: /cinar.png
-        text: >-
-          buenas tardesbuenas tardesbuenas tardesbuenas tardesbuenas
-          tardesbuenas tardesbuenas tardesbuenas tardesbuenas tardesbuenas
-          tardesbuenas tardesbuenas tardesbuenas tardesbuenas tardes
-      - image: /cccoil.svg
-        text: ahghdjsgfkjhsdjhfdskkfg
-      - image: /logobrand.webp
-        text: hola bobo que ve
-      - image: /nnneon.svg
-        text: hola mundo
-      - image: /lexus-png.png
-        text: esta tecnologia es la mejor
-    _template: techComponent
   - formId: '12655'
     formFields:
       label: nombre
@@ -137,10 +121,29 @@ blocks:
 
       jdj\<sddfjshdfsjdfhsjkfdhfkjd
     _template: card
+  - mainText: ''
+    images:
+      - image: /cinar.png
+        text: >-
+          buenas tardesbuenas tardesbuenas tardesbuenas tardesbuenas
+          tardesbuenas tardesbuenas tardesbuenas tardesbuenas tardesbuenas
+          tardesbuenas tardesbuenas tardesbuenas tardesbuenas tardes
+        alt: este es el texto alternativo
+      - image: /cccoil.svg
+        text: ahghdjsgfkjhsdjhfdskkfg
+      - image: /logobrand.webp
+        text: hola bobo que ve
+      - image: /nnneon.svg
+        text: hola mundo
+      - image: /lexus-png.png
+        text: esta tecnologia es la mejor
+    _template: techComponent
   - label: Conóceme
     featuredPost: content/posts/call-themes.md
     _template: featuredReading
 ---
+
+
 
 
 

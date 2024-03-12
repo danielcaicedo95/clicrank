@@ -101,7 +101,7 @@ export default function PageComponent(props: PageComponentProps) {
           }
           case "PageBlocksTechComponent": {
             const techComponentBlock = block as TechComponentBlock;
-            const validImages = techComponentBlock.images?.filter(image => image.image !== null && image.image !== undefined).map(image => ({ image: image.image || '', alt: image || '', text: image.text || '' })) || [];
+            const validImages = techComponentBlock.images?.filter(image => image.image !== null && image.image !== undefined).map(image => ({ image: image.image || '', alt: image.text || '', text: image.text || '' })) || [];
             return <TechComponent key={i} mainText={techComponentBlock.mainText || ''} images={validImages} />;
           }
 
